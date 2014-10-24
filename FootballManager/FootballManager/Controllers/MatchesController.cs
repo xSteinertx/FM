@@ -47,7 +47,7 @@ namespace FootballManager.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Date,Time,Score")] Match match)
+        public ActionResult Create([Bind(Include = "Date,Time,Score")] Match match)
         {
             if (ModelState.IsValid)
             {

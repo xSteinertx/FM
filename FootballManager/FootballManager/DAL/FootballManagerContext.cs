@@ -5,7 +5,6 @@ using System.Web;
 using FootballManager.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using FootballManager.Models;
 
 namespace FootballManager.DAL
 {
