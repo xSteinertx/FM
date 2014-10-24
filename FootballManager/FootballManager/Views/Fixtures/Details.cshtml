@@ -1,0 +1,42 @@
+﻿@model FootballManager.Models.Fixture
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Fixture</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NFixture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NFixture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
